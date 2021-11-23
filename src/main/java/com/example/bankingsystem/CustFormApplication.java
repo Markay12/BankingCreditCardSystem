@@ -7,14 +7,25 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class CustFormApplication extends Application {
+
+    private static Stage stg;
+
+
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1080, 720);
-        stage.setTitle("Credit Card | Banking System");
+
+        stg = stage;
+        stage.setResizable(false);
+
+        FXMLLoader fxmlLoader = new FXMLLoader(customer_form.class.getResource("customer_form.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 720, 480);
+        stage.setTitle("Customer Account Form");
         stage.setScene(scene);
         stage.show();
+
+
+
     }
 
     public static void main(String[] args) {
