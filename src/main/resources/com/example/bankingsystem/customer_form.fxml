@@ -55,7 +55,7 @@
             </Label>
             <Button layoutX="94.0" layoutY="307.0" mnemonicParsing="false" onAction="#erase" text="Cancel" />
             <Button layoutX="217.0" layoutY="307.0" mnemonicParsing="false" onAction="#saveToFile" text="Save" />
-            <TextField fx:id="fname_field" layoutX="120.0" layoutY="45.0" prefHeight="25.0" prefWidth="129.0" />
+            <TextField fx:id="fname_field" layoutX="120.0" layoutY="45.0" onMouseClicked="#clearSuccess" prefHeight="25.0" prefWidth="129.0" />
             <TextField fx:id="lname_field" layoutX="426.0" layoutY="48.0" prefHeight="25.0" prefWidth="129.0" />
             <TextField fx:id="custid_field" layoutX="120.0" layoutY="109.0" prefHeight="25.0" prefWidth="129.0" />
             <TextField fx:id="number_field" layoutX="426.0" layoutY="109.0" prefHeight="25.0" prefWidth="129.0" />
