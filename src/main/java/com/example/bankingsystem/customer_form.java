@@ -21,7 +21,7 @@ public class customer_form {
     @FXML
     private Label appSentLabel;
 
-    private int createdFile = 0;
+    private int fileNum = 0;
 
     public void erase(ActionEvent actionEvent) throws IOException
     {
@@ -44,15 +44,16 @@ public class customer_form {
         try
         {
 
+            fileNum++;
+
+            FileWriter writer = new FileWriter("customer_information\\customer" + fileNum + "Information.txt");
+
             //create string to write to text File
             String customer_info = "";
 
             customer_info += "First name: " + fname_field.getText() + "\nLast name: " + lname_field.getText() + "\nCustomer ID: " + custid_field.getText() + "\nPhone Number: " + number_field.getText()
             + "\nAddress: " + address_field.getText() + "\nSavings Account #: " + saccnt_field.getText() + "\tChecking Account #: " + caccnt_field.getText() + "\n\n";
 
-
-            //buffered writer for multiple lines
-            BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\ashin\\OneDrive\\Desktop\\BankingCreditCardSystem\\customer_information\\customer_information.txt", true));
 
             //write to file
             writer.write(customer_info);
