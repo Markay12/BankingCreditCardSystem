@@ -1,4 +1,4 @@
-# Banking and Credit Card System
+# Banking and Credit Card System 
 
 This system represents the use of multiple actors interacting with a banking and credit card operating system.
 
@@ -16,7 +16,7 @@ functionality of this system.
 ## Project Dependencies
 
 This project was developed using JavaFX and JavaFXML. The main controller files were coded using Java and the UI files
-were coded using JavaFXML.
+were coded using JavaFXML. 
 
 The JavaFXML represents the XML code file to show the user a GUI of the system and its interactions.
 
